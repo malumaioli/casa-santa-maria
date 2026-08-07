@@ -1,5 +1,3 @@
-const WHATSAPP_NUMBER = '5519993431144';
-
 const header = document.querySelector('.site-header');
 let lastScrollY = window.scrollY;
 let ticking = false;
@@ -21,27 +19,5 @@ if (header) {
       requestAnimationFrame(updateHeader);
       ticking = true;
     }
-  });
-}
-
-const form = document.getElementById('contact-form');
-
-if (form) {
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const nome = form.nome.value.trim();
-    const telefone = form.telefone.value.trim();
-    const mensagem = form.mensagem.value.trim();
-
-    const lines = [
-      `Olá! Meu nome é ${nome}.`,
-      telefone ? `Telefone: ${telefone}` : '',
-      mensagem || 'Gostaria de saber mais sobre a Casa Santa Maria.',
-    ].filter(Boolean);
-
-    const text = encodeURIComponent(lines.join('\n'));
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${text}`, '_blank', 'noopener');
-    form.reset();
   });
 }
