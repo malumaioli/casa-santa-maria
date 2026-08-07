@@ -229,7 +229,15 @@ img{max-width:100%}
 
 @media (min-width:861px){
   .rotina-intro .photo-portrait{display:none}
-  .rotina-intro .split-text{flex:none;width:100%;max-width:640px}
+  .rotina-intro{justify-content:center}
+  .rotina-intro .split-text{
+    flex:none;
+    width:100%;
+    max-width:640px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .rotina-intro .split-text p{max-width:none}
 }
 
 .split{
