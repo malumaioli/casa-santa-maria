@@ -287,7 +287,17 @@ img{max-width:100%}
   border-radius:50%;
   background:var(--gold);
 }
-.care-list-cols{grid-template-columns:1fr 1fr}
+.care-list-cols{
+  display:block;
+  columns:2;
+  column-gap:40px;
+}
+.care-list-cols li{
+  break-inside:avoid;
+  -webkit-column-break-inside:avoid;
+  margin-bottom:11px;
+}
+.care-list-cols li:last-child{margin-bottom:0}
 
 .care-grid{
   display:grid;
@@ -378,7 +388,7 @@ a.contact-item:hover{color:var(--gold)}
   .hero-title{font-size:38px}
   .section-title{font-size:32px}
   .care-grid{grid-template-columns:1fr 1fr}
-  .care-list-cols{grid-template-columns:1fr}
+  .care-list-cols{columns:1}
   .facilities-grid{grid-template-columns:1fr 1fr}
   .site-header{padding:8px 24px}
   .section{padding:72px 24px}
