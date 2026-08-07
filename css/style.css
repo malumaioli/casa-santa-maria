@@ -224,7 +224,7 @@ img{max-width:100%}
   color:var(--ink-soft);
 }
 
-.rotina-intro{margin-bottom:64px}
+.split.rotina-intro{margin-bottom:96px}
 .rotina-intro .split-text p{max-width:440px}
 
 @media (min-width:861px){
@@ -408,7 +408,7 @@ a.contact-item:hover{color:var(--gold)}
     aspect-ratio:3/4;
     align-self:center;
   }
-  .rotina-intro{margin-bottom:40px}
+  .split.rotina-intro{margin-bottom:56px}
   .loc-media{flex:none;width:100%}
 }
 
